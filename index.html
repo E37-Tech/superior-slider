@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Superior Slider - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="EL7Yvxo8APzbFhCrnsh-UytJBzSoS0ry3HjqYn4ad1QBqlbaM0F1-tjClXrnght32wQE9q_bMsgyQ_9fdPN2iw" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font -->
+    <link href="https://fonts.cdnfonts.com/css/ubuntu" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="./css/slider.css" rel="stylesheet">
+
+    <!-- FAV and Icons -->
+    <link rel="icon" type="image/x-icon" href="./images/2.png" />
+  </head>
+
+  <body class="bg-slate-800 max-w-full overflow-x-hidden font-['ubuntu']">
+    <!-- Header -->
+    <header class="bg-slate-900 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="text-xl font-bold">
+          <a href="#">
+            <img class="w-auto h-[3.5rem] scale-75 hover:scale-90 transition-all duration-500 ease-in-out" src="./images/3.png" />
+          </a>
+        </div>
+        <nav>
+          <ul class="flex space-x-6">
+            <li class="group cursor-pointer">
+              <a href="#" class="group-hover:text-orange-600 transition-all duration-500 ease-in-out">Home</a>
+              <div class="h-[0.16rem] w-0 bg-orange-600 group-hover:w-[2.4rem] transition-all duration-300 ease-in-out"></div>
+            </li>
+            <li class="group cursor-pointer">
+              <a href="#" class="group-hover:text-orange-600 transition-all duration-500 ease-in-out">Features</a>
+              <div class="h-[0.16rem] w-0 bg-orange-600 group-hover:w-[3.4rem] transition-all duration-300 ease-in-out"></div>
+            </li>
+            <li class="group cursor-pointer">
+              <a href="#" class="group-hover:text-orange-600 transition-all duration-500 ease-in-out">Demo</a>
+              <div class="h-[0.16rem] w-0 bg-orange-600 group-hover:w-[2.4rem] transition-all duration-300 ease-in-out"></div>
+            </li>
+            <li class="group cursor-pointer">
+              <a href="#" class="group-hover:text-orange-600 transition-all duration-500 ease-in-out">Contact</a>
+              <div class="h-[0.16rem] w-0 bg-orange-600 group-hover:w-[3.4rem] transition-all duration-300 ease-in-out"></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="min-h-screen">
+      <section class="text-white w-full">
+        <div class="absolute left-5 top-[7.5rem] grid grid-cols-2 border border-gray-400 rounded-full divide-x divide-gray-500 h-10 shadow-lg shadow-gray-900 text-md z-10">
+          <button class="px-6 hover:bg-orange-600/80 rounded-l-full transition-all duration-500 ease-in-out" onclick="window.location.href='tel:#'">
+            <i class="fa-solid fa-phone mr-2"></i>Call Us
+          </button>
+          <button class="px-6 hover:bg-orange-600/80 transition-all duration-500 ease-in-out rounded-r-full" onclick="window.location.href='mailto:#'">
+            <i class="fa-solid fa-envelope mr-2"></i>Email Us
+          </button>
+        </div>
+
+        <div class="hidden md:block absolute right-10 top-[7.5rem] group">
+          <div class="relative">
+            <button class="text-white text-lg lg:text-xl size-[1.8rem] lg:size-[2.2rem] rounded-full border border-white scale-100 hover:scale-110 transition-all duration-500 ease-in-out">
+              <i class="fa-solid fa-house-chimney"></i>
+            </button>
+            <div class="hidden group-hover:block transition-all duration-500 ease-in-out absolute top-1 -left-[3.5rem] lg:-left-[4.5rem] text-md lg:text-xl text-white font-semibold text-right z-50">
+              <p>Home</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <p>&copy; 2024 Superior Slider. All rights reserved.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-orange-600 transition-all duration-500 ease-in-out"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-orange-600 transition-all duration-500 ease-in-out"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-orange-600 transition-all duration-500 ease-in-out"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
