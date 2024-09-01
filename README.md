@@ -17,7 +17,7 @@
 
 ## Demo
 
-Experience **Superior Slider** in action: [Live Demo](https://demo.com)
+Experience **Superior Slider** in action: [Live Demo](https://e37tech.site/superior)
 
 ## Installation
 
@@ -40,8 +40,8 @@ import 'superior-slider/dist/superior-slider.css';
 - Include the following links in your HTML file:
 
 ```
-<link rel="stylesheet" href="https://cdn.yourcdn.com/superior-slider/superior-slider.min.css">
-<script src="https://cdn.yourcdn.com/superior-slider/superior-slider.min.js"></script>
+<link rel="stylesheet" href="https://e37tech.site/superior-slider/superior-slider.min.css">
+<script src="https://e37tech.site/superior-slider/superior-slider.min.js"></script>
 ```
 
 ## Manual Download
@@ -162,7 +162,7 @@ git push origin feature/your-feature-name
 - Clone the repository:
 
 ```
-git clone https://github.com/yourusername/superior-slider.git
+git clone git@github.com:E37-Tech/superior-slider.git
 ```
 
 ## Install dependencies:
@@ -190,7 +190,7 @@ npm run build
 ## Contact
 - For questions, suggestions, or support, please reach out:
 
-Email: e37tech@gmail.com
-GitHub: elibiz443
+- Email: e37tech@gmail.com
+- GitHub: E37-Tech
 
 #### If you find Superior Slider useful, please consider giving it a star on GitHub! ⭐
