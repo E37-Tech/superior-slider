@@ -21,7 +21,7 @@
     <link rel="icon" type="image/x-icon" href="./images/2.png" />
   </head>
 
-  <body class="bg-slate-800 max-w-full overflow-x-hidden font-['ubuntu']">
+  <body class="bg-slate-300 max-w-full overflow-x-hidden font-['ubuntu']">
     <!-- Header -->
     <header class="bg-slate-900 text-white py-4">
       <div class="container mx-auto flex justify-between items-center px-4">
@@ -55,7 +55,7 @@
 
     <!-- Main Content -->
     <main class="min-h-screen">
-      <section class="text-white w-full">
+      <section class="text-slate-800 w-full">
         <div class="absolute left-5 top-[7.5rem] grid grid-cols-2 border border-gray-400 rounded-full divide-x divide-gray-500 h-10 shadow-lg shadow-gray-900 text-md z-10">
           <button class="px-6 hover:bg-orange-600/80 rounded-l-full transition-all duration-500 ease-in-out" onclick="window.location.href='tel:#'">
             <i class="fa-solid fa-phone mr-2"></i>Call Us
@@ -67,13 +67,42 @@
 
         <div class="hidden md:block absolute right-10 top-[7.5rem] group">
           <div class="relative">
-            <button class="text-white text-lg lg:text-xl size-[1.8rem] lg:size-[2.2rem] rounded-full border border-white scale-100 hover:scale-110 transition-all duration-500 ease-in-out">
+            <button class="text-slate-800 text-lg lg:text-xl size-[1.8rem] lg:size-[2.2rem] rounded-full border border-gray-600 scale-100 hover:scale-110 transition-all duration-500 ease-in-out">
               <i class="fa-solid fa-house-chimney"></i>
             </button>
-            <div class="hidden group-hover:block transition-all duration-500 ease-in-out absolute top-1 -left-[3.5rem] lg:-left-[4.5rem] text-md lg:text-xl text-white font-semibold text-right z-50">
+            <div class="hidden group-hover:block transition-all duration-500 ease-in-out absolute top-1 -left-[3.5rem] lg:-left-[4.5rem] text-md lg:text-xl text-slate-800 font-semibold text-right z-50">
               <p>Home</p>
             </div>
           </div>
+        </div>
+
+        <div class="mt-[8rem]">
+          <div class="w-[80%] h-[30rem] mx-auto relative bg-slate-500 border-t border-x border-slate-500 rounded-t-2xl">
+            <img id="superior-image-holder" class="size-full object-cover cursor-pointer rounded-t-2xl" src="./images/slider-images/1.jpg" alt="Selected Image"/>
+
+            <div id="superior-slide-wraper" class="border-t border-x border-slate-500 flex justify-center items-center space-x-4 absolute bottom-0 right-0 bg-gradient-to-r from-slate-300 via-slate-300 to transparent pl-6 rounded-tl-xl">
+              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/1.jpg" alt="Slide 1"/>
+              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/2.jpg" alt="Slide 2"/>
+              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/3.jpg" alt="Slide 3"/>
+              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/4.jpg" alt="Slide 4"/>
+              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/5.jpg" alt="Slide 5"/>
+              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/6.jpg" alt="Slide 6"/>
+              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/7.jpg" alt="Slide 7"/>
+              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/8.jpg" alt="Slide 8"/>
+
+              <div class="grid text-white text-xl">
+                <button id="prev" class="group relative size-[3.2rem] bg-slate-800/80 hover:text-slate-800">
+                  <div class="absolute inset-0 bg-white/80 translate-x-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left"></div>
+                  <i class="fa-solid fa-angle-left group-hover:rotate-[90deg] transition-all duration-300 ease-in-out"></i>
+                </button>
+                <button id="next" class="group relative size-[3.2rem] bg-slate-800/80 hover:text-slate-800">
+                  <div class="absolute inset-0 bg-white/80 translate-x-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left"></div>
+                  <i class="fa-solid fa-angle-right group-hover:rotate-[90deg] transition-all duration-300 ease-in-out"></i>
+                </button>
+              </div>
+            </div>
+        </div>
+
         </div>
       </section>
     </main>
