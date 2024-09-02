@@ -80,17 +80,34 @@
         <div class="mt-[6rem]">
           <h4 class="text-slate-800 text-xl lg:text-3xl font-bold mb-4 text-center">First Slider - Static</h4>
           <div class="superior-slider w-[80%] h-[30rem] mx-auto relative bg-slate-500 border-t border-x border-slate-500 rounded-t-2xl">
+
             <img class="superior-image-holder size-full object-cover cursor-pointer rounded-t-2xl" src="./images/slider-images/1.jpg" alt="Selected Image"/>
 
             <div class="superior-slide-wrapper hidden lg:flex justify-center items-center border-t border-x border-slate-500 space-x-4 absolute bottom-0 right-[3.3rem] bg-gradient-to-r from-slate-300 via-slate-300 to transparent px-6 py-5 rounded-tl-xl">
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/1.jpg" alt="Slide 1"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/2.jpg" alt="Slide 2"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/3.jpg" alt="Slide 3"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/4.jpg" alt="Slide 4"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/5.jpg" alt="Slide 5"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/6.jpg" alt="Slide 6"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/7.jpg" alt="Slide 7"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/8.jpg" alt="Slide 8"/>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/1.jpg" alt="Slide 1"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/2.jpg" alt="Slide 2"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/3.jpg" alt="Slide 3"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/4.jpg" alt="Slide 4"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/5.jpg" alt="Slide 5"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/6.jpg" alt="Slide 6"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/7.jpg" alt="Slide 7"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/8.jpg" alt="Slide 8"/>
+              </div>
             </div>
             <div class="flex lg:grid text-white text-xl absolute bottom-0 right-0">
               <button class="superior-prev group relative size-[3.3rem] bg-slate-800/80 hover:text-slate-800">
@@ -106,20 +123,95 @@
         </div>
 
         <!-- Second Slider -->
-        <div class="mt-[4rem]">
-          <h4 class="text-slate-800 text-xl lg:text-3xl font-bold mb-4 text-center">Second Slider - Autoslide</h4>
+        <div class="mt-[6rem]">
+          <h4 class="text-slate-800 text-xl lg:text-3xl font-bold mb-4 text-center">First Slider - Static</h4>
           <div class="superior-slider w-[80%] h-[30rem] mx-auto relative bg-slate-500 border-t border-x border-slate-500 rounded-t-2xl">
+
             <img class="superior-image-holder superior-slide-auto-3 size-full object-cover cursor-pointer rounded-t-2xl" src="./images/slider-images/1.jpg" alt="Selected Image"/>
 
             <div class="superior-slide-wrapper hidden lg:flex justify-center items-center border-t border-x border-slate-500 space-x-4 absolute bottom-0 right-[3.3rem] bg-gradient-to-r from-slate-300 via-slate-300 to transparent px-6 py-5 rounded-tl-xl">
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/1.jpg" alt="Slide 1"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/2.jpg" alt="Slide 2"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/3.jpg" alt="Slide 3"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/4.jpg" alt="Slide 4"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/5.jpg" alt="Slide 5"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/6.jpg" alt="Slide 6"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/7.jpg" alt="Slide 7"/>
-              <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/8.jpg" alt="Slide 8"/>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/1.jpg" alt="Slide 1"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/2.jpg" alt="Slide 2"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/3.jpg" alt="Slide 3"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/4.jpg" alt="Slide 4"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/5.jpg" alt="Slide 5"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/6.jpg" alt="Slide 6"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/7.jpg" alt="Slide 7"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/8.jpg" alt="Slide 8"/>
+              </div>
+            </div>
+            <div class="flex lg:grid text-white text-xl absolute bottom-0 right-0">
+              <button class="superior-prev group relative size-[3.3rem] bg-slate-800/80 hover:text-slate-800">
+                <div class="absolute inset-0 bg-white/80 translate-x-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left"></div>
+                <i class="fa-solid fa-angle-left group-hover:rotate-[90deg] transition-all duration-300 ease-in-out"></i>
+              </button>
+              <button class="superior-next group relative size-[3.3rem] bg-slate-800/80 hover:text-slate-800">
+                <div class="absolute inset-0 bg-white/80 translate-x-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left"></div>
+                <i class="fa-solid fa-angle-right group-hover:rotate-[90deg] transition-all duration-300 ease-in-out"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Slider -->
+        <div class="mt-[4rem]">
+          <h4 class="text-slate-800 text-xl lg:text-3xl font-bold mb-4 text-center">Third Slider - Autoslide With Caption</h4>
+          <div class="superior-slider w-[80%] h-[30rem] mx-auto relative bg-slate-500 border-t border-x border-slate-500 rounded-t-2xl">
+
+            <div class="superior-display flex flex-col  items-center h-full">
+              <div class="absolute inset-0 rounded-t-2xl bg-black opacity-40"></div>
+              <img class="superior-image-holder superior-slide-auto-3 size-full object-cover cursor-pointer rounded-t-2xl" src="./images/slider-images/1.jpg" alt="Selected Image"/>
+              <div class="superior-image-caption text-white text-3xl lg:text-6xl font-bold absolute top-1/2 left-1/2 transform translate-x-[-50%] translate-y-[-50%] z-10"></div>
+            </div>
+
+            <div class="superior-slide-wrapper hidden lg:flex justify-center items-center border-t border-x border-slate-500 space-x-4 absolute bottom-0 right-[3.3rem] bg-gradient-to-r from-slate-300 via-slate-300 to transparent px-6 py-5 rounded-tl-xl">
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/1.jpg" alt="Slide 1"/>
+                <div class="superior-slide-caption hidden">Caption 1</div>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/2.jpg" alt="Slide 2"/>
+                <div class="superior-slide-caption hidden">Caption 2</div>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/3.jpg" alt="Slide 3"/>
+                <div class="superior-slide-caption hidden">Caption 3</div>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/4.jpg" alt="Slide 4"/>
+                <div class="superior-slide-caption hidden">Caption 4</div>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/5.jpg" alt="Slide 5"/>
+                <div class="superior-slide-caption hidden">Caption 5</div>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/6.jpg" alt="Slide 6"/>
+                <div class="superior-slide-caption hidden">Caption 6</div>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/7.jpg" alt="Slide 7"/>
+                <div class="superior-slide-caption hidden">Caption 7</div>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide w-16 h-16 object-cover cursor-pointer rounded shadow-md shadow-gray-900 border border-gray-300 hover:rotate-[4deg] hover:scale-[115%] transition-all duration-500 ease-in-out" src="./images/slider-images/8.jpg" alt="Slide 8"/>
+                <div class="superior-slide-caption hidden">Caption 8</div>
+              </div>
             </div>
             <div class="flex lg:grid text-white text-xl absolute bottom-0 right-0">
               <button class="superior-prev group relative size-[3.3rem] bg-slate-800/80 hover:text-slate-800">

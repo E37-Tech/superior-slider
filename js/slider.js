@@ -1,18 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('.superior-slider').forEach(function (slider) {
-    const slides = slider.querySelectorAll(".superior-slide-wrapper .superior-slide");
-    const totalImages = slides.length;
+    const slideContainers = slider.querySelectorAll(".superior-slide-container");
+    const totalImages = slideContainers.length;
     let currentIndex = 0;
 
     const superiorImageHolder = slider.querySelector(".superior-image-holder");
+    const superiorImageCaption = slider.querySelector(".superior-image-caption");
     const nextButton = slider.querySelector(".superior-next");
     const prevButton = slider.querySelector(".superior-prev");
 
     let autoSlideInterval = null;
 
     function updateActiveImage(index) {
-      const selectedSlide = slides[index];
+      const selectedSlide = slideContainers[index].querySelector(".superior-slide");
       superiorImageHolder.src = selectedSlide.src;
+
+      const selectedCaptionElement = slideContainers[index].querySelector(".superior-slide-caption");
+      if (superiorImageCaption && selectedCaptionElement) {
+        superiorImageCaption.textContent = selectedCaptionElement.textContent;
+      } else if (superiorImageCaption) {
+        superiorImageCaption.textContent = '';
+      }
     }
 
     function getAutoSlideInterval() {
@@ -42,8 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    slides.forEach((slide, index) => {
-      slide.addEventListener("click", function () {
+    slideContainers.forEach((container, index) => {
+      container.addEventListener("click", function () {
         stopAutoSlide();
         currentIndex = index;
         updateActiveImage(currentIndex);
