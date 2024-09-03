@@ -11,7 +11,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let autoSlideInterval = null;
 
-    function updateActiveImage(index) {
+    function updateActiveImage(index, animate = true, slideDirection = 'down') {
+      if (animate) {
+        superiorImageHolder.classList.add(`slide-${slideDirection}`);
+
+        if (superiorImageCaption) {
+          superiorImageCaption.classList.add(`slide-${slideDirection}`);
+        }
+
+        setTimeout(() => {
+          changeImage(index);
+
+          superiorImageHolder.classList.remove(`slide-${slideDirection}`);
+          superiorImageHolder.classList.add(`slide-${slideDirection}-in`);
+
+          if (superiorImageCaption) {
+            superiorImageCaption.classList.remove(`slide-${slideDirection}`);
+            superiorImageCaption.classList.add(`slide-${slideDirection}-in`);
+          }
+
+          setTimeout(() => {
+            superiorImageHolder.classList.remove(`slide-${slideDirection}-in`);
+
+            if (superiorImageCaption) {
+              superiorImageCaption.classList.remove(`slide-${slideDirection}-in`);
+            }
+          }, 1000);
+        }, 1000);
+      } else {
+        changeImage(index);
+      }
+    }
+
+    function changeImage(index) {
       const selectedSlide = slideContainers[index].querySelector(".superior-slide");
       superiorImageHolder.src = selectedSlide.src;
 
@@ -54,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
       container.addEventListener("click", function () {
         stopAutoSlide();
         currentIndex = index;
-        updateActiveImage(currentIndex);
+        updateActiveImage(currentIndex, true, 'down');
         startAutoSlide(getAutoSlideInterval());
       });
     });
@@ -62,18 +94,18 @@ document.addEventListener("DOMContentLoaded", function () {
     nextButton.addEventListener("click", function () {
       stopAutoSlide();
       currentIndex = (currentIndex + 1) % totalImages;
-      updateActiveImage(currentIndex);
+      updateActiveImage(currentIndex, true, 'down');
       startAutoSlide(getAutoSlideInterval());
     });
 
     prevButton.addEventListener("click", function () {
       stopAutoSlide();
       currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-      updateActiveImage(currentIndex);
+      updateActiveImage(currentIndex, true, 'up');
       startAutoSlide(getAutoSlideInterval());
     });
 
-    updateActiveImage(currentIndex);
+    updateActiveImage(currentIndex, false);
 
     const interval = getAutoSlideInterval();
     if (interval) {

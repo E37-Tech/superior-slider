@@ -1,0 +1,47 @@
+.superior-image-holder {
+  transition: transform 1s ease-in-out;
+}
+
+.slide-down {
+  transform: translateY(-100%);
+}
+
+.slide-up {
+  transform: translateY(100%);
+}
+
+.slide-down-in {
+  transform: translateY(0);
+}
+
+.slide-up-in {
+  transform: translateY(0);
+}
+
+.superior-image-caption {
+  opacity: 1;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.superior-image-caption.slide-up,
+.superior-image-caption.slide-down {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.superior-image-caption.slide-up-in,
+.superior-image-caption.slide-down-in {
+  opacity: 1;
+}
+
+/* The overlay div */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  z-index: 1; /* Ensure it sits on top of the image */
+  pointer-events: none; /* Allow clicks to pass through the overlay */
+}
