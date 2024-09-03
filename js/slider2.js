@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
   const wrapper = document.querySelector(".superior-wrapper-holder");
   const images = Array.from(wrapper.querySelectorAll(".superior-element-holder"));
+  const prevButton = document.querySelector(".superior-prev-multiple");
+  const nextButton = document.querySelector(".superior-next-multiple");
 
   function getTotalElements() {
     const sizeClass = Array.from(wrapper.classList).find(cls => cls.startsWith('superior-wrapper-size-'));
@@ -18,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     images.forEach(image => {
       image.classList.add("hidden");
+      image.classList.remove("scale-125", "z-10");
     });
 
     const visibleImages = images.slice(0, totalElements);
@@ -27,19 +30,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const middleIndex = Math.floor(visibleImages.length / 2);
 
-    visibleImages.forEach((image, index) => {
-      if (index === 0) {
-        image.querySelector(".superior-image-overlay")?.classList.remove("hidden");
-        image.querySelector(".superior-image-overlay")?.classList.add("bg-gradient-to-r", "from-black", "via-black/50", "to-transparent");
-      } else if (index === middleIndex) {
-        image.classList.add("scale-125", "z-10");
-      } else if (index === visibleImages.length - 1) {
-        image.querySelector(".superior-image-overlay")?.classList.remove("hidden");
-        image.querySelector(".superior-image-overlay")?.classList.add("bg-gradient-to-r", "from-transparent", "via-black/50", "to-black");
-      }
-    });
+    if (visibleImages[middleIndex]) {
+      visibleImages[middleIndex].classList.add("scale-125", "z-10");
+    }
+  }
+
+  function updateSlider(direction) {
+    const totalElements = images.length;
+
+    if (totalElements <= 0) return;
+
+    const firstElement = images[0];
+    const lastElement = images[totalElements - 1];
+
+    if (direction === 'next') {
+      wrapper.appendChild(firstElement);
+    } else if (direction === 'prev') {
+      wrapper.insertBefore(lastElement, images[0]);
+    }
+
+    images.splice(0, totalElements);
+    images.push(...Array.from(wrapper.querySelectorAll(".superior-element-holder")));
+    applyStyling();
   }
 
   applyStyling();
   window.addEventListener("resize", applyStyling);
+
+  prevButton.addEventListener("click", function() {
+    updateSlider('prev');
+  });
+
+  nextButton.addEventListener("click", function() {
+    updateSlider('next');
+  });
 });
