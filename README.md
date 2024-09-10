@@ -271,4 +271,4 @@ npm run build
 - Email: e37tech@gmail.com
 - GitHub: E37-Tech
 
-#### If you find Superior Slider useful, please consider giving it a star on GitHub! ⭐
+#### If you find Superior Slider useful, please consider giving it a star ⭐
