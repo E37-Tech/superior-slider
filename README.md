@@ -147,11 +147,11 @@ import 'superior-slider/dist/superior-slider.css';
 
 * Autoslide: 
 
-- superior-slide-auto-7 (The number at the end represents the number of seconds for autoslide)
+superior-slide-auto-7 (The number at the end represents the number of seconds for autoslide)
 ```
 <img class="superior-image-holder superior-slide-auto-7 size-full object-cover" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/1.jpg" alt="Selected Image"/>
 ```
-- superior-multiple-slider-auto-5 (5 represents the number of seconds for autoslide)
+superior-multiple-slider-auto-5 (5 represents the number of seconds for autoslide)
 
 * Visible Images: superior-wrapper-size-5 (Five represents the number of images to load, but the first and the last are hidden by default so 3 will be shown)
 

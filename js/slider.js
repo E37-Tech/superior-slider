@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // superior-slider
   document.querySelectorAll('.superior-slider').forEach(function (slider) {
     const slideContainers = slider.querySelectorAll(".superior-slide-container");
     const totalImages = slideContainers.length;
@@ -114,7 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // superior-multiple-slider
   const sliders = document.querySelectorAll(".superior-multiple-slider");
 
   sliders.forEach((slider) => {
