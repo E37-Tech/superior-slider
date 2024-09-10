@@ -65,28 +65,28 @@ import 'superior-slider/dist/superior-slider.css';
 
   <div class="superior-slide-wrapper hidden">
     <div class="superior-slide-container">
-      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/1.jpg"/>
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/1.jpg"/>
     </div>
     <div class="superior-slide-container">
-      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/2.jpg"/>
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/2.jpg"/>
     </div>
     <div class="superior-slide-container">
-      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/3.jpg"/>
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/3.jpg"/>
     </div>
     <div class="superior-slide-container">
-      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/4.jpg"/>
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/4.jpg"/>
     </div>
     <div class="superior-slide-container">
-      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/5.jpg"/>
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/5.jpg"/>
     </div>
     <div class="superior-slide-container">
-      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/6.jpg"/>
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/6.jpg"/>
     </div>
     <div class="superior-slide-container">
-      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/7.jpg"/>
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/7.jpg"/>
     </div>
     <div class="superior-slide-container">
-      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/8.jpg"/>
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/8.jpg"/>
     </div>
   </div>
   <div class="flex lg:grid text-white text-xl absolute bottom-0 right-0 z-10">
@@ -106,28 +106,28 @@ import 'superior-slider/dist/superior-slider.css';
 <div class="superior-multiple-slider relative">
   <div class="superior-wrapper-holder superior-wrapper-size-5 superior-multiple-slider-auto-5 w-[180%] -ml-[40%] h-[10rem] md:h-[14rem] lg:h-[18rem] flex space-x-[5%]">
     <div class="superior-element-holder relative">
-      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/1.jpg"/>
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/1.jpg"/>
     </div>
     <div class="superior-element-holder relative">
-      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/2.jpg"/>
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/2.jpg"/>
     </div>
     <div class="superior-element-holder relative">
-      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/3.jpg"/>
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/3.jpg"/>
     </div>
     <div class="superior-element-holder relative">
-      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/4.jpg"/>
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/4.jpg"/>
     </div>
     <div class="superior-element-holder relative">
-      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/5.jpg"/>
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/5.jpg"/>
     </div>
     <div class="superior-element-holder relative">
-      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/6.jpg"/>
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/6.jpg"/>
     </div>
     <div class="superior-element-holder relative">
-      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/7.jpg"/>
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/7.jpg"/>
     </div>
     <div class="superior-element-holder relative">
-      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/8.jpg"/>
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/8.jpg"/>
     </div>
   </div>
 
@@ -149,7 +149,7 @@ import 'superior-slider/dist/superior-slider.css';
 
 superior-slide-auto-7 (The number at the end represents the number of seconds for autoslide)
 ```
-<img class="superior-image-holder superior-slide-auto-7 size-full object-cover" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/1.jpg" alt="Selected Image"/>
+<img class="superior-image-holder superior-slide-auto-7 size-full object-cover" src="https://raw.githubusercontent.com/E37-Tech/superior-slider-demo/master/images/slider-images/1.jpg" alt="Selected Image"/>
 ```
 superior-multiple-slider-auto-5 (5 represents the number of seconds for autoslide)
 
