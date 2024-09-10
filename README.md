@@ -29,20 +29,19 @@ Choose one of the following methods to include Superior Slider in your project:
 npm install superior-slider --save
 ```
 
-## Import into your project:
+## Import into your project(Rails etc):
 
 ```
 import SuperiorSlider from 'superior-slider';
-import 'superior-slider/dist/superior-slider.css';
 ```
 
-## Using CDN
-- Include the following links in your HTML file:
+Or 
 
+## Import to html file:
 ```
-<link rel="stylesheet" href="https://e37tech.site/superior-slider/superior-slider.min.css">
-<script src="https://e37tech.site/superior-slider/superior-slider.min.js"></script>
+<script src="node_modules/superior-slider/dist/superior-slider.min.js"></script>
 ```
+
 
 ## Manual Download
 - Download the latest release from the GitHub Releases page.
