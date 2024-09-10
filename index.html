@@ -76,8 +76,53 @@
           </div>
         </div>
 
-        <!-- First Slider -->
+        <!-- Basic Slider -->
         <div class="mt-[6rem] pb-14">
+          <h4 class="text-slate-800 text-xl lg:text-3xl font-bold mb-4 text-center">Basic Slider - Static</h4>
+          <div class="superior-slider w-full h-[20rem] md:h-[25rem] lg:h-[30rem] relative bg-gray-500 overflow-hidden">
+            <img class="superior-image-holder size-full object-cover" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/1.jpg" alt="Selected Image"/>
+
+            <div class="superior-slide-wrapper hidden">
+              <div class="superior-slide-container">
+                <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/1.jpg"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/2.jpg"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/3.jpg"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/4.jpg"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/5.jpg"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/6.jpg"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/7.jpg"/>
+              </div>
+              <div class="superior-slide-container">
+                <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/8.jpg"/>
+              </div>
+            </div>
+            <div class="flex lg:grid text-white text-xl absolute bottom-0 right-0 z-10">
+              <button class="superior-prev group relative size-[3.3rem] bg-slate-800/80 hover:text-slate-800">
+                <div class="absolute inset-0 bg-white/80 translate-x-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left"></div>
+                <i class="fa-solid fa-angle-left group-hover:rotate-[90deg] transition-all duration-300 ease-in-out"></i>
+              </button>
+              <button class="superior-next group relative size-[3.3rem] bg-slate-800/80 hover:text-slate-800">
+                <div class="absolute inset-0 bg-white/80 translate-x-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left"></div>
+                <i class="fa-solid fa-angle-right group-hover:rotate-[90deg] transition-all duration-300 ease-in-out"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- First Slider -->
+        <div class="pb-14">
           <h4 class="text-slate-800 text-xl lg:text-3xl font-bold mb-4 text-center">First Slider - Static</h4>
           <div class="superior-slider w-full h-[20rem] md:h-[25rem] lg:h-[30rem] mx-auto relative bg-slate-500/80 border-t border-x border-slate-500  overflow-hidden">
             <img class="superior-image-holder size-full object-cover cursor-pointer" src="./images/slider-images/1.jpg" alt="Selected Image"/>
@@ -169,7 +214,7 @@
         <!-- Third Slider -->
         <div class="pb-14">
           <h4 class="text-slate-800 text-xl lg:text-3xl font-bold mb-4 text-center">Third Slider - Autoslide With Caption</h4>
-          <div class="superior-slider w-full h-[20rem] md:h-[25rem] lg:h-[30rem] mx-auto relative bg-slate-500/80 border-t border-x border-slate-500  overflow-hidden">
+          <div class="superior-slider w-full h-[20rem] md:h-[25rem] lg:h-[30rem] relative bg-slate-500/80 border-t border-x border-slate-500  overflow-hidden">
             <div class="superior-display flex flex-col items-center h-full">
               <div class="image-overlay"></div>
               <img class="superior-image-holder superior-slide-auto-7 size-full object-cover cursor-pointer" src="./images/slider-images/1.jpg" alt="Selected Image"/>
@@ -324,6 +369,5 @@
     </footer>
 
     <script src="./js/slider.js"></script>
-    <script src="./js/slider2.js"></script>
   </body>
 </html>

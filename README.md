@@ -60,67 +60,146 @@ import 'superior-slider/dist/superior-slider.css';
 - Add the following HTML structure where you want the slider to appear:
 
 ```
-<div class="superior-slider">
-  <div class="superior-slider__wrapper">
-    <div class="superior-slider__slide">
-      <!-- Slide 1 content -->
-      <img src="image1.jpg" alt="Slide 1">
+<div class="superior-slider w-full h-[20rem] md:h-[25rem] lg:h-[30rem] relative bg-gray-500 overflow-hidden">
+  <img class="superior-image-holder size-full object-cover" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/1.jpg" alt="Selected Image"/>
+
+  <div class="superior-slide-wrapper hidden">
+    <div class="superior-slide-container">
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/1.jpg"/>
     </div>
-    <div class="superior-slider__slide">
-      <!-- Slide 2 content -->
-      <img src="image2.jpg" alt="Slide 2">
+    <div class="superior-slide-container">
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/2.jpg"/>
     </div>
-    <div class="superior-slider__slide">
-      <!-- Slide 3 content -->
-      <img src="image3.jpg" alt="Slide 3">
+    <div class="superior-slide-container">
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/3.jpg"/>
     </div>
-    <!-- Add more slides as needed -->
+    <div class="superior-slide-container">
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/4.jpg"/>
+    </div>
+    <div class="superior-slide-container">
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/5.jpg"/>
+    </div>
+    <div class="superior-slide-container">
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/6.jpg"/>
+    </div>
+    <div class="superior-slide-container">
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/7.jpg"/>
+    </div>
+    <div class="superior-slide-container">
+      <img class="superior-slide" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/8.jpg"/>
+    </div>
+  </div>
+  <div class="flex lg:grid text-white text-xl absolute bottom-0 right-0 z-10">
+    <button class="superior-prev group relative size-[3.3rem] bg-slate-800/80 hover:text-slate-800">
+      <div class="absolute inset-0 bg-white/80 translate-x-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left"></div>
+      <i class="fa-solid fa-angle-left group-hover:rotate-[90deg] transition-all duration-300 ease-in-out"></i>
+    </button>
+    <button class="superior-next group relative size-[3.3rem] bg-slate-800/80 hover:text-slate-800">
+      <div class="absolute inset-0 bg-white/80 translate-x-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out origin-left"></div>
+      <i class="fa-solid fa-angle-right group-hover:rotate-[90deg] transition-all duration-300 ease-in-out"></i>
+    </button>
   </div>
 </div>
 ```
 
-## Initialization
-- Initialize the slider using JavaScript:
-
 ```
-const slider = new SuperiorSlider('.superior-slider', {
-  visibleSlides: 3,
-  transitionSpeed: 500,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  navigation: true,
-  pagination: true,
-  pauseOnHover: true,
-});
+<div class="superior-multiple-slider relative">
+  <div class="superior-wrapper-holder superior-wrapper-size-5 superior-multiple-slider-auto-5 w-[180%] -ml-[40%] h-[10rem] md:h-[14rem] lg:h-[18rem] flex space-x-[5%]">
+    <div class="superior-element-holder relative">
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/1.jpg"/>
+    </div>
+    <div class="superior-element-holder relative">
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/2.jpg"/>
+    </div>
+    <div class="superior-element-holder relative">
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/3.jpg"/>
+    </div>
+    <div class="superior-element-holder relative">
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/4.jpg"/>
+    </div>
+    <div class="superior-element-holder relative">
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/5.jpg"/>
+    </div>
+    <div class="superior-element-holder relative">
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/6.jpg"/>
+    </div>
+    <div class="superior-element-holder relative">
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/7.jpg"/>
+    </div>
+    <div class="superior-element-holder relative">
+      <img class="size-full object-cover cursor-pointer rounded-lg border border-slate-300 bg-slate-500 shadow-md shadow-slate-900" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/8.jpg"/>
+    </div>
+  </div>
+
+  <button class="superior-prev-multiple group absolute z-20 left-1 md:left-3 top-1/2 transform translate-y-[-50%] text-teal-900 text-[2rem] size-[3.4rem] rounded-full border border-transparent hover:border-teal-800 transition-all duration-500 ease-in-out">
+    <i class="fa-solid fa-angle-left group-hover:scale-[120%] transition-all duration-500 ease-in-out"></i>
+  </button>
+  <button class="superior-next-multiple group absolute z-20 right-1 md:right-3 top-1/2 transform translate-y-[-50%] text-teal-900 text-[2rem] size-[3.4rem] rounded-full border border-transparent hover:border-teal-800 transition-all duration-500 ease-in-out">
+    <i class="fa-solid fa-angle-right group-hover:scale-[120%] transition-all duration-500 ease-in-out"></i>
+  </button>
+
+  <div class="absolute z-10 left-0 h-full w-[5rem] md:w-[7rem] lg:w-[9rem] top-0 bg-gradient-to-r from-gray-200 via-gray-200/50 to-transparent"></div>
+  <div class="absolute z-10 right-0 h-full w-[5rem] md:w-[7rem] xl:w-[9rem] top-0 bg-gradient-to-r from-transparent via-gray-200/50 to-gray-200"></div>
+</div>
 ```
 
 ## Configuration Options
 
-* Option  Type  Default Description
-* visibleSlides Number  1 Number of slides visible at once.
-* transitionSpeed Number  500 Duration of slide transition in milliseconds.
-* infinite  Boolean true  Enables infinite looping of slides.
-* autoplay  Boolean false Enables automatic sliding.
-* autoplaySpeed Number  3000  Time interval between slides in autoplay mode (in milliseconds).
-* navigation  Boolean true  Displays next and previous navigation arrows.
-* pagination  Boolean true  Displays pagination dots.
-* pauseOnHover  Boolean true  Pauses autoplay when hovering over the slider.
+* Autoslide: 
+
+- superior-slide-auto-7 (The number at the end represents the number of seconds for autoslide)
+```
+<img class="superior-image-holder superior-slide-auto-7 size-full object-cover" src="https://raw.githubusercontent.com/E37-Tech/superior-slider/master/images/slider-images/1.jpg" alt="Selected Image"/>
+```
+- superior-multiple-slider-auto-5 (5 represents the number of seconds for autoslide)
+
+* Visible Images: superior-wrapper-size-5 (Five represents the number of images to load, but the first and the last are hidden by default so 3 will be shown)
+
 
 ## Styling
 - Customize the appearance by overriding default CSS classes or adding your own styles:
 
 ```
-.superior-slider__slide {
+.superior-image-holder {
   /* Your custom styles */
 }
 
-.superior-slider__navigation {
-  /* Custom navigation styles */
+.slide-down {
+  /* Your custom styles */
 }
 
-.superior-slider__pagination {
-  /* Custom pagination styles */
+.slide-up {
+  /* Your custom styles */
+}
+
+.slide-down-in {
+  /* Your custom styles */
+}
+
+.slide-up-in {
+  /* Your custom styles */
+}
+
+.superior-image-caption {
+  /* Your custom styles */
+}
+
+.superior-image-caption.slide-up,
+.superior-image-caption.slide-down {
+  /* Your custom styles */
+}
+
+.superior-image-caption.slide-up-in,
+.superior-image-caption.slide-down-in {
+  /* Your custom styles */
+}
+
+.image-overlay {
+  /* Your custom styles */
+}
+
+.superior-element-holder {
+  /* Your custom styles */
 }
 ```
 
