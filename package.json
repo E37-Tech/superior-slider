@@ -3,7 +3,9 @@
   "version": "1.0.2",
   "description": "A JavaScript slider for single and multiple image transitions",
   "main": "dist/superior-slider.min.js",
+  "style": "dist/superior-slider.min.css",
   "scripts": {
+    "build:dev": "webpack --mode development",
     "build": "webpack --mode production",
     "test": "echo \"No test specified\" && exit 1"
   },
@@ -27,6 +29,8 @@
   "homepage": "https://github.com/E37-Tech/superior-slider#readme",
   "devDependencies": {
     "webpack": "^5.94.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "style-loader": "^3.3.1",
+    "css-loader": "^6.7.1"
   }
 }

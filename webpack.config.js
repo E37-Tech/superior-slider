@@ -5,8 +5,16 @@ module.exports = {
   output: {
     filename: 'superior-slider.min.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'SuperiorSlider', 
-    libraryTarget: 'umd', 
+    library: 'SuperiorSlider',
+    libraryTarget: 'umd',
   },
-  mode: 'production'
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+  mode: 'production',
 };
