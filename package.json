@@ -1,6 +1,6 @@
 {
   "name": "superior-slider",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A JavaScript slider for single and multiple image transitions",
   "main": "dist/superior-slider.min.js",
   "style": "dist/superior-slider.min.css",
