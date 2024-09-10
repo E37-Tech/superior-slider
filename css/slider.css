@@ -1,3 +1,4 @@
+/*Superior Carousel*/
 .superior-image-holder {
   transition: transform 1s ease-in-out;
 }
@@ -27,6 +28,7 @@
 .superior-image-caption.slide-down {
   opacity: 0;
   transform: translateX(-100%);
+  transform: translateY(-100%);
 }
 
 .superior-image-caption.slide-up-in,
@@ -47,7 +49,6 @@
 }
 
 /*Second Slider*/
-
 .superior-element-holder {
   transition: transform 1s ease-in-out;
 }
