@@ -17,7 +17,7 @@
 
 ## Demo
 
-Experience **Superior Slider** in action: [Live Demo](https://e37tech.site/superior)
+Experience **Superior Slider** in action: [Live Demo](https://superior-slider-demo.onrender.com)
 
 ## Installation
 
