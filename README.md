@@ -4,6 +4,9 @@
 
 **Superior Slider** is a smooth, infinitely looping carousel slider that creates the illusion of images moving endlessly in a circular container. It provides a seamless and dynamic experience, perfect for showcasing images or content without any interruptions.
 
+## Requirements
+- Tailwind CSS: [Install Tailwind](https://tailwindcss.com/docs/installation)
+
 ## Features
 
 - **Infinite Looping:** Slides transition continuously, creating a flawless endless loop.
